@@ -1,0 +1,19 @@
+".container": {
+    layout: 'vertical',
+	backgroundColor:"white"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+'.control': {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+},
+'.left': {
+    left: 0
+},
+'.right': {
+    right: 0
+}

@@ -1,0 +1,13 @@
+{
+	"id": "jp.co.mountposition.calendar",
+	"name": "jp.co.mountposition.calendar",
+	"description" : "This is the calendar with a confirmation.",
+	"author": "@hamasyou",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2012 MountPosition Inc.",
+	"license":"MIT License",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"calendar, alloy, titanium",
+	"platforms":"android,ios,mobileweb"
+}

@@ -1,0 +1,11 @@
+<Alloy>
+	<Window class="container">
+        <View class="control">
+            <Button id="prevMonth" title="prevMonth" class="left" onClick="doPrevMonth" />
+            <Button id="nextMonth" title="nextMonth" class="right" onClick="doNextMonth" />
+        </View>
+        <View id="calendar">
+            <Widget id="current" src="jp.co.mountposition.calendar" />
+        </View>
+	</Window>
+</Alloy>

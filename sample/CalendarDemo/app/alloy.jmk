@@ -1,0 +1,29 @@
+
+task("pre:compile", function(event,logger) {
+    var wrench = require("wrench"),
+        fs = require("fs"),
+        path = require("path"),
+        coffee = require("coffee-script");
+
+    event.alloyConfig.coffee = [];
+
+    logger.info("----- COFFEEALLOY PREPROCESSOR -----");
+    logger.info("Preprocessing CoffeeScript files in [project_root]/app/");
+
+    wrench.readdirSyncRecursive(event.dir.home).forEach(function(target){
+        if (target.match(/\.coffee$/)) {
+            event.alloyConfig.coffee.push(target.replace(/\.coffee$/, ".js"));
+            logger.info("- Preprocessing: " + path.join(event.dir.home + "/" + target));
+            fs.writeFileSync(
+                path.join(event.dir.home,target.replace(/\.coffee$/, ".js")),
+                coffee.compile(fs.readFileSync(path.join(event.dir.home + "/" + target)).toString(), { bare: true })
+            );
+        }
+    });
+});
+
+task("post:compile",function(event,logger){
+    logger.info("----- FINISH -----");
+    var fs = require("fs");
+
+});

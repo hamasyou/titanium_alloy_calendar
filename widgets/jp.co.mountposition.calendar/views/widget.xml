@@ -1,0 +1,10 @@
+<Alloy>
+	<View id="view">
+        <View id="container">
+            <View id="days">
+            </View>
+            <View id="dates" onClick="doClick">
+            </View>
+        </View>
+    </View>
+</Alloy>
