@@ -7,6 +7,24 @@ This is the calendar widget of Titanium Alloy.
 Usage
 ------
 Copy the `widgets` folder in `app/widgets` folder of your project.
+And add dependencies in `config.json`.
+
+### config.json ###
+Add dependencies of `app/config.json`
+
+```json
+{
+    "global": {},
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:ios": {},
+    "os:android": {},
+    "dependencies": {
+        "jp.co.mountposition.calendar": "1.0"
+    }
+}
+```
 
 For more information, please see the `sample` project.
 
